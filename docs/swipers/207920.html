@@ -1,11 +1,11 @@
 <style>
       .basic-slider-container { position: relative; width: 100%; max-width: 822px; margin: 0 auto; font-family: STMatilda Info Variable, system-ui, sans-serif; }
       .image-wrapper { position: relative; width: 100%; overflow: hidden; }
-      .basic-slider-scroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 50%; position: relative; width: 100%; -ms-overflow-style: none; scrollbar-width: none; }
+      .basic-slider-scroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; position: relative; width: 100%; -ms-overflow-style: none; scrollbar-width: none; }
       .basic-slider-scroll::-webkit-scrollbar { display: none; }
-      .basic-slider-item { flex-shrink: 0; scroll-snap-type: x mandatory; padding: 0 50%; scroll-snap-align: center; max-width: 80%; position: relative; aspect-ratio: 1/1; }
+      .basic-slider-item { flex-shrink: 0; scroll-snap-type: x mandatory; scroll-snap-align: center; max-width: 80%; position: relative; aspect-ratio: 1/1; }
       .basic-slider-item img { display: block; width: 100%; height: 100%; border-radius: 5px; object-fit: cover; }
-      
+      .basic-slider-item:last-child { padding-right: 30px; }
       .dj-caption { position: absolute; top: 5px; left: 5px; z-index: 20; background: rgba(0, 0, 0, 0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 20px; font-weight: 400; }
       .gradient { position: absolute; width: 100%; height: 100%; background-image: linear-gradient(to right, #fff 0%, transparent 10%, transparent 83%, #fff 100%); z-index: 10; pointer-events: none; top: 0; left: 0; }
       .slider-overview { position: absolute; bottom: 0; right: 0; height: 46%; z-index: 30; max-width: 100%; }

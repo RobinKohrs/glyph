@@ -33,18 +33,4 @@ for (plot_id in plot_ids) {
 
   # Write the widget to the file
   writeLines(as.character(swiper_widget), output_file)
-
-  # Read the content back, modify it, and write it back
-  html_content <- readLines(output_file)
-  html_content <- gsub(
-    "scroll-snap-type: x mandatory;",
-    "scroll-snap-type: x mandatory; padding: 0 50%;",
-    html_content
-  )
-  html_content <- gsub(
-    ".basic-slider-item:last-child \\{ padding-right: 30px; \\}",
-    "",
-    html_content
-  )
-  writeLines(html_content, output_file)
 }
