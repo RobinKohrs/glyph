@@ -16,7 +16,7 @@ for (plot_id in plot_ids) {
   image_paths <- fs::dir_ls(here::here("docs", "data", plot_id), glob = "*.png")
 
   image_list <- lapply(image_paths, function(path) {
-    list(path = paste0("../data/", plot_id, "/", basename(path)))
+    list(path = paste0("https://github.com/RobinKohrs/glyph/blob/main/docs/data/", plot_id, "/", basename(path)))
   })
 
   # Define the output path for the swiper HTML file
@@ -27,15 +27,12 @@ for (plot_id in plot_ids) {
   swiper_widget <- html_create_image_swiper(
     image_data = image_list,
     gradient_color = "#fff",
+    gradient_stops = c("0" = "#fff", "5" = "#fff", "15" = "transparent", "50" = "transparent", "85" = "transparent", "95" = "#fff", "100" = "#fff"),
     aspect_ratio = "1/1",
     max_width = "822",
-    main_image_width = 80,
-    output_file = output_file
-
-
+    main_image_width = 80
   )
 
+  clipr::write_clip(swiper_widget)
 
-  # Write the widget to the file
-  writeLines(as.character(swiper_widget), output_file)
 }
