@@ -31,7 +31,8 @@ for (plot_id in plot_ids) {
     aspect_ratio = "1/1",
     max_width = "822",
     main_image_width = 80,
-    output_file = output_file
+    output_file = output_file,
+    dot_size = "14px"
   )
 
   clipr::write_clip(swiper_widget)
