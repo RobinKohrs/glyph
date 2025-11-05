@@ -8,7 +8,7 @@ library(fs)
 
 
 # Define a vector of plot IDs to process
-plot_ids <- c("207920", "270924") # Add other IDs here as you get them
+plot_ids <- c("207920", "270924", "211198") # Add other IDs here as you get them
 
 # Loop through each plot ID
 for (plot_id in plot_ids) {
@@ -19,17 +19,22 @@ for (plot_id in plot_ids) {
     list(path = paste0("../data/", plot_id, "/", basename(path)))
   })
 
+  # Define the output path for the swiper HTML file
+  output_file <- here::here("docs", "swipers", paste0(plot_id, ".html"))
+
   # Generate the image swiper widget.
   # This calls the function with your image data. No overlay is specified.
   swiper_widget <- html_create_image_swiper(
     image_data = image_list,
     gradient_color = "#fff",
     aspect_ratio = "1/1",
-    max_width = "822"
+    max_width = "822",
+    main_image_width = 80,
+    output_file = output_file
+
+
   )
 
-  # Define the output path for the swiper HTML file
-  output_file <- here::here("docs", "swipers", paste0(plot_id, ".html"))
 
   # Write the widget to the file
   writeLines(as.character(swiper_widget), output_file)
