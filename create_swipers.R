@@ -32,7 +32,8 @@ for (plot_id in plot_ids) {
     max_width = "822",
     main_image_width = 80,
     output_file = output_file,
-    dot_size = "14px"
+    dot_size = "13px",
+    include_html_header = TRUE
   )
 
   clipr::write_clip(swiper_widget)

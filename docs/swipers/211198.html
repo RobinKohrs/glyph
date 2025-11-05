@@ -1,225 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiper</title>
-  </head>
-  <body>
-    <style>
-      .swiper-lz6yqxxx.basic-slider-container {
-        position: relative;
-        width: 100%;
-        max-width: 822px;
-        margin: 0 auto;
-        font-family: STMatilda Info Variable, system-ui, sans-serif;
-      }
-      .swiper-lz6yqxxx .image-wrapper {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-      }
-      .swiper-lz6yqxxx .basic-slider-scroll {
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        position: relative;
-        width: 100%;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      .swiper-lz6yqxxx .basic-slider-scroll::before,
-      .swiper-lz6yqxxx .basic-slider-scroll::after {
-        content: "";
-        flex-basis: 10%;
-        flex-shrink: 0;
-      }
-      .swiper-lz6yqxxx .basic-slider-scroll::-webkit-scrollbar {
-        display: none;
-      }
-      .swiper-lz6yqxxx .basic-slider-item {
-        flex-shrink: 0;
-        scroll-snap-align: center;
-        width: 80%;
-        position: relative;
-        aspect-ratio: 1/1;
-      }
-      .swiper-lz6yqxxx .basic-slider-item img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        object-fit: contain;
-      }
-      .swiper-lz6yqxxx .dj-caption {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 20;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .swiper-lz6yqxxx .gradient {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(
-          to right,
-          #fff 0%,
-          #fff 5%,
-          transparent 15%,
-          transparent 50%,
-          transparent 85%,
-          #fff 95%,
-          #fff 100%
-        );
-        z-index: 10;
-        pointer-events: none;
-        top: 0;
-        left: 0;
-      }
-      .swiper-lz6yqxxx .slider-overview {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 46%;
-        z-index: 30;
-        max-width: 100%;
-      }
-      .swiper-lz6yqxxx .nav-button {
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        background: rgba(100, 100, 100);
-        color: white;
-        border: none;
-        width: 3.125rem;
-        height: 3.125rem;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 20;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-      }
-      .swiper-lz6yqxxx .nav-button svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: currentColor;
-      }
-      @media (max-width: 600px) {
-        .swiper-lz6yqxxx .nav-button {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-        .swiper-lz6yqxxx .nav-button svg {
-          width: 1.25rem;
-          height: 1.25rem;
-        }
-      }
-      .swiper-lz6yqxxx .nav-button.next svg {
-        transform: scaleX(-1);
-      }
-      .swiper-lz6yqxxx .nav-button:disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
-      }
-      .swiper-lz6yqxxx .nav-button.prev {
-        left: 0.625rem;
-      }
-      .swiper-lz6yqxxx .nav-button.next {
-        right: 0.625rem;
-      }
-      .swiper-lz6yqxxx .dots {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 0.625rem;
-      }
-      .swiper-lz6yqxxx .dot {
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background: #efefef;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      .swiper-lz6yqxxx .dot.active {
-        background: #454545;
-        transform: scale(1.5);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swiper</title>
+</head>
+<body>
+<style>
+      .swiper-jj4nnv3q.basic-slider-container { position: relative; width: 100%; max-width: 822px; margin: 0 auto; font-family: STMatilda Info Variable, system-ui, sans-serif; }
+      .swiper-jj4nnv3q .image-wrapper { position: relative; width: 100%; overflow: hidden; }
+      .swiper-jj4nnv3q .basic-slider-scroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; position: relative; width: 100%; -ms-overflow-style: none; scrollbar-width: none; }
+      .swiper-jj4nnv3q .basic-slider-scroll::before, .swiper-jj4nnv3q .basic-slider-scroll::after { content: ''; flex-basis: 10.00%; flex-shrink: 0; }
+      .swiper-jj4nnv3q .basic-slider-scroll::-webkit-scrollbar { display: none; }
+      .swiper-jj4nnv3q .basic-slider-item { flex-shrink: 0; scroll-snap-align: center; width: 80.00%; position: relative; aspect-ratio: 1/1; }
+      .swiper-jj4nnv3q .basic-slider-item img { display: block; width: 100%; height: 100%; border-radius: 5px; object-fit: contain; }
+      .swiper-jj4nnv3q .dj-caption { position: absolute; top: 5px; left: 5px; z-index: 20; background: rgba(0, 0, 0, 0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 20px; font-weight: 400; }
+      .swiper-jj4nnv3q .gradient { position: absolute; width: 100%; height: 100%; background-image: linear-gradient(to right, #fff 0%, #fff 5%, transparent 15%, transparent 50%, transparent 85%, #fff 95%, #fff 100%); z-index: 10; pointer-events: none; top: 0; left: 0; }
+      .swiper-jj4nnv3q .slider-overview { position: absolute; bottom: 0; right: 0; height: 46%; z-index: 30; max-width: 100%; }
+      .swiper-jj4nnv3q .nav-button { position: absolute; top: 40%; transform: translateY(-50%); background: rgba(100,100,100); color: white; border: none; width: 3.125rem; height: 3.125rem; border-radius: 50%; cursor: pointer; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 0; }
+      .swiper-jj4nnv3q .nav-button svg { width: 1.5rem; height: 1.5rem; fill: currentColor; }
+      @media (max-width: 600px) { .swiper-jj4nnv3q .nav-button { width: 2.5rem; height: 2.5rem; } .swiper-jj4nnv3q .nav-button svg { width: 1.25rem; height: 1.25rem; } }
+      .swiper-jj4nnv3q .nav-button.next svg { transform: scaleX(-1); }
+      .swiper-jj4nnv3q .nav-button:disabled { opacity: 0.3; cursor: not-allowed; }
+      .swiper-jj4nnv3q .nav-button.prev { left: 0.625rem; }
+      .swiper-jj4nnv3q .nav-button.next { right: 0.625rem; }
+      .swiper-jj4nnv3q .dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 0.625rem; }
+      .swiper-jj4nnv3q .dot { width: 13px; height: 13px; border-radius: 50%; background: #efefef; cursor: pointer; transition: all 0.30s ease; }
+      .swiper-jj4nnv3q .dot.active { background: #454545; transform: scale(1.5); }
     </style>
-    <div class="basic-slider-container swiper-lz6yqxxx">
-      <div class="image-wrapper">
-        <div class="gradient"></div>
-        <div class="basic-slider-scroll">
-          <div class="basic-slider-item">
-            <img
-              src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_1.png"
-              alt="Slider Image"
-            />
-          </div>
-          <div class="basic-slider-item">
-            <img
-              src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_2.png"
-              alt="Slider Image"
-            />
-          </div>
-          <div class="basic-slider-item">
-            <img
-              src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_3.png"
-              alt="Slider Image"
-            />
-          </div>
-          <div class="basic-slider-item">
-            <img
-              src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_4.png"
-              alt="Slider Image"
-            />
-          </div>
-        </div>
-        <button class="nav-button prev">
-          <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m825.84 1176c-29.668 0.035156-58.195-11.453-79.559-32.039l-432.84-417.6c-22.719-21.879-39.117-49.48-47.469-79.895-8.3555-30.414-8.3555-62.516 0-92.93 8.3516-30.414 24.75-58.016 47.469-79.895l432.84-417.6c29.453-28.402 71.82-38.934 111.14-27.629 39.324 11.305 69.629 42.734 79.5 82.441 9.8711 39.707-2.1914 81.664-31.645 110.07l-393 379.08 393 379.08c22.039 21.238 34.66 50.418 35.039 81.027 0.37891 30.605-11.516 60.09-33.027 81.867-21.508 21.773-50.844 34.031-81.453 34.027z"
-            />
-          </svg>
-        </button>
-        <button class="nav-button next">
-          <svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m825.84 1176c-29.668 0.035156-58.195-11.453-79.559-32.039l-432.84-417.6c-22.719-21.879-39.117-49.48-47.469-79.895-8.3555-30.414-8.3555-62.516 0-92.93 8.3516-30.414 24.75-58.016 47.469-79.895l432.84-417.6c29.453-28.402 71.82-38.934 111.14-27.629 39.324 11.305 69.629 42.734 79.5 82.441 9.8711 39.707-2.1914 81.664-31.645 110.07l-393 379.08 393 379.08c22.039 21.238 34.66 50.418 35.039 81.027 0.37891 30.605-11.516 60.09-33.027 81.867-21.508 21.773-50.844 34.031-81.453 34.027z"
-            />
-          </svg>
-        </button>
+<div class="basic-slider-container swiper-jj4nnv3q">
+  <div class="image-wrapper">
+    <div class="gradient"></div>
+    <div class="basic-slider-scroll">
+      <div class="basic-slider-item">
+        <img src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_1.png" alt="Slider Image"/>
       </div>
-      <div class="dots"></div>
+      <div class="basic-slider-item">
+        <img src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_2.png" alt="Slider Image"/>
+      </div>
+      <div class="basic-slider-item">
+        <img src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_3.png" alt="Slider Image"/>
+      </div>
+      <div class="basic-slider-item">
+        <img src="https://raw.githubusercontent.com/RobinKohrs/glyph/refs/heads/main/docs/data/211198/output_4.png" alt="Slider Image"/>
+      </div>
     </div>
-    <script>
-      (function () {
+    <button class="nav-button prev"><svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg"><path d="m825.84 1176c-29.668 0.035156-58.195-11.453-79.559-32.039l-432.84-417.6c-22.719-21.879-39.117-49.48-47.469-79.895-8.3555-30.414-8.3555-62.516 0-92.93 8.3516-30.414 24.75-58.016 47.469-79.895l432.84-417.6c29.453-28.402 71.82-38.934 111.14-27.629 39.324 11.305 69.629 42.734 79.5 82.441 9.8711 39.707-2.1914 81.664-31.645 110.07l-393 379.08 393 379.08c22.039 21.238 34.66 50.418 35.039 81.027 0.37891 30.605-11.516 60.09-33.027 81.867-21.508 21.773-50.844 34.031-81.453 34.027z"/></svg></button>
+    <button class="nav-button next"><svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg"><path d="m825.84 1176c-29.668 0.035156-58.195-11.453-79.559-32.039l-432.84-417.6c-22.719-21.879-39.117-49.48-47.469-79.895-8.3555-30.414-8.3555-62.516 0-92.93 8.3516-30.414 24.75-58.016 47.469-79.895l432.84-417.6c29.453-28.402 71.82-38.934 111.14-27.629 39.324 11.305 69.629 42.734 79.5 82.441 9.8711 39.707-2.1914 81.664-31.645 110.07l-393 379.08 393 379.08c22.039 21.238 34.66 50.418 35.039 81.027 0.37891 30.605-11.516 60.09-33.027 81.867-21.508 21.773-50.844 34.031-81.453 34.027z"/></svg></button>
+  </div>
+  <div class="dots"></div>
+</div>
+<script>
+      (function() {
         const debounceDelay = 0;
-        const container = document.querySelector(
-          ".swiper-lz6yqxxx.basic-slider-container:not([data-initialized])"
-        );
+        const container = document.querySelector('.swiper-jj4nnv3q.basic-slider-container:not([data-initialized])');
         if (!container) return;
-        container.setAttribute("data-initialized", "true");
-        const slider = container.querySelector(".basic-slider-scroll");
-        const slides = container.querySelectorAll(".basic-slider-item");
-        const prevBtn = container.querySelector(".prev");
-        const nextBtn = container.querySelector(".next");
-        const dotsContainer = container.querySelector(".dots");
+        container.setAttribute('data-initialized', 'true');
+        const slider = container.querySelector('.basic-slider-scroll');
+        const slides = container.querySelectorAll('.basic-slider-item');
+        const prevBtn = container.querySelector('.prev');
+        const nextBtn = container.querySelector('.next');
+        const dotsContainer = container.querySelector('.dots');
         if (!slider || !slides || slides.length === 0) return;
         let current_image = 0;
         const total_images = slides.length;
         for (let i = 0; i < total_images; i++) {
-          const dot = document.createElement("div");
-          dot.className = "dot" + (i === 0 ? " active" : "");
+          const dot = document.createElement('div');
+          dot.className = 'dot' + (i === 0 ? ' active' : '');
           dot.onclick = () => goToSlide(i);
           dotsContainer.appendChild(dot);
         }
@@ -228,9 +75,9 @@
           nextBtn.disabled = current_image >= total_images - 1;
         }
         function updateDots() {
-          const dots = dotsContainer.querySelectorAll(".dot");
+          const dots = dotsContainer.querySelectorAll('.dot');
           dots.forEach((dot, i) => {
-            dot.className = "dot" + (i === current_image ? " active" : "");
+            dot.className = 'dot' + (i === current_image ? ' active' : '');
           });
         }
         function updateCurrentImageOnScroll() {
@@ -256,34 +103,24 @@
         function goToSlide(index) {
           const slideWidth = slides[0].clientWidth;
           const gap = parseInt(window.getComputedStyle(slider).gap) || 10;
-          slider.scrollTo({
-            left: index * (slideWidth + gap),
-            behavior: "smooth",
-          });
+          slider.scrollTo({ left: index * (slideWidth + gap), behavior: 'smooth' });
           current_image = index;
           updateButtons();
           updateDots();
         }
-        prevBtn.onclick = () => {
-          if (current_image > 0) goToSlide(current_image - 1);
-        };
-        nextBtn.onclick = () => {
-          if (current_image < total_images - 1) goToSlide(current_image + 1);
-        };
+        prevBtn.onclick = () => { if (current_image > 0) goToSlide(current_image - 1); };
+        nextBtn.onclick = () => { if (current_image < total_images - 1) goToSlide(current_image + 1); };
         if (debounceDelay > 0) {
           let scrollTimeout;
-          slider.addEventListener("scroll", () => {
+          slider.addEventListener('scroll', () => {
             clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(
-              updateCurrentImageOnScroll,
-              debounceDelay
-            );
+            scrollTimeout = setTimeout(updateCurrentImageOnScroll, debounceDelay);
           });
         } else {
-          slider.addEventListener("scroll", updateCurrentImageOnScroll);
+          slider.addEventListener('scroll', updateCurrentImageOnScroll);
         }
         let resizeTimeout;
-        window.addEventListener("resize", () => {
+        window.addEventListener('resize', () => {
           clearTimeout(resizeTimeout);
           resizeTimeout = setTimeout(updateCurrentImageOnScroll, 50);
         });
@@ -291,5 +128,5 @@
         updateDots();
       })();
     </script>
-  </body>
+</body>
 </html>
